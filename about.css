@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+	background: url("img/background.jpeg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+/*----------------------Header/Nav---------------------*/
+
+.name {
+	color: antiquewhite;
+	float: right;
+	margin-right: 20px;
+}
+.prof {
+	font-size: 16px;
+	text-align: center;
+	padding-left: 30px;
+}
+
+.nav-bar {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.nav-bar ul li a {
+	color: antiquewhite;
+	text-decoration: none;
+	font-size: 18px;
+}
+.nav-bar ul li {
+	display: inline-block;
+	margin: 10px;
+}
+.nav-bar ul li:hover {
+		transform: scale(1.3, 1.3);
+	}
+
+.current {
+	padding: none;
+	border: none;
+	border-bottom: 2px solid red;
+}
+.head {
+	padding-bottom: 40px;
+}
+
+/*----------------------body---------------------*/
+
+
+div.polaroid {
+    width: 284px;
+    margin-top: 100px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    display: block;
+}
+
+div.rotate_right {
+    float: left;
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+	float: left;
+	transform: rotate(-8deg);
+}
+/*----------------------Footer---------------------*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+    clear: both;
+}
+
+.social_media {
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	background-color: antiquewhite;
+	border-radius: 20%;
+}
+.social_media:hover {
+	transform: scale(1.3, 1.3);
+	color: white;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+
+@media all and (max-width: 480px) {
+
+/*----------------------Header/Nav---------------------*/
+.name {
+	float: none;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.prof {
+	font-size: 16px;
+	padding-right: 40px;
+}
+
+.nav-bar {
+	text-align: center;
+	margin: 10px auto;
+}
+
+.nav-bar ul li {
+	padding: 10px 20px 5px;
+}
+
+.nav-bar ul li:hover {
+		transform: none;
+	}
+}
+
+
+
+/*----------------------Body---------------------*/
+
+
+div.polaroid {
+    float: none;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/*----------------------Footer---------------------*/
+	footer {
+    position: static;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+	
+}
+
+@media all and (max-width: 768px) and (min-width: 481px) {
+
+.nav-bar{
+	padding-bottom: 5px;
+}
+
+div.polaroid {
+	float: none;
+	margin: 0 auto;
+}
+
+
+
+footer {
+    position: static;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+
+}
+
+@media all and (max-width: 992px) and (min-width: 769px) {
+
+.body {
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.polaroid {
+	float: none;
+	margin: 0 auto;
+}
+
+div.rotate_right {
+    float: left;
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+	float: left;
+	transform: rotate(-8deg);
+}
+
+}
