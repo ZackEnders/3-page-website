@@ -36,6 +36,9 @@ html {
 	display: inline-block;
 	margin: 10px;
 }
+.nav-bar ul li:hover {
+		transform: scale(1.3, 1.3);
+	}
 
 .current {
 	padding: none;
@@ -49,30 +52,41 @@ html {
 
 /*----------------------Body---------------------*/
 
+.contact-head {
+	line-height: 40px;
+	font-size: 32px;
+}
+.contact-me {
+	list-style-type: none;
 
-.poster {
-	margin: 10px 0;
-	width: 200px;
-	height: 100px;
-	border: 3px solid black;
-	background-color: antiquewhite;
-	display: inline-block;
-	opacity: .7;
-	border-radius: 5%
+}
+.contact-me li {
+	width: 300px;
+	border-radius: 5%;
+	background-color: black;
+	border: 2px solid antiquewhite;
+	text-align: center;
+	margin: 100px auto;
+	margin-bottom: 0;
+	opacity: .8;
+	color: antiquewhite;
+
 }
 
-.poster p {
-	text-align: center;
-}
-.poster h2 {
-	text-align: center;
-}
-.poster a {
+.contact-me li a{
 	text-decoration: none;
+	width: 100%;
+	display: block;
+	/*margin: 0 auto;*/
+	line-height: 40px;
+	color: antiquewhite;
 	font-size: 24px;
-	color: black;
-	margin: 10px;
 }
+
+
+
+
+
 
 
 
@@ -129,18 +143,41 @@ footer {
 	padding: 10px 20px 5px;
 }
 
+/*----------------------body---------------------*/
 
-#contact-me {
+
+.contact-head {
+	line-height: 80px;
+	font-size: 32px;
+}
+.contact-me {
+	list-style-type: none;
+}
+.contact-me li {
+	width: 60%;
+/*	background-color: antiquewhite;*/
+/*	border: 2px solid black;*/
 	text-align: center;
-	margin: 10px;
+	margin: 10% auto;
+	opacity: .8;
+/*	color: black;*/
+	float: none;
+	border-radius: 5%;
 }
 
-.poster {
-	width: 300px;
-	height: 80px;
+.contact-me li a{
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	line-height: 80px;
+/*	color: black;*/
+	font-size: 24px;
 }
 
-
+li.mail a {
+	font-size: 20px;
+}
 /*----------------------Footer---------------------*/
 	footer {
     position: absolute;
@@ -155,21 +192,22 @@ footer {
 
 @media all and (max-width: 768px) and (min-width: 481px) {
 
-#one {
-	width: 400px;
-	height: 80px;
-}
-.poster {
-	width: 400px;
-	height: 120px;
-}
-#contact-me {
-	text-align: center;
-	margin: 40px;
+.contact-head {
+	line-height: 80px;
+	font-size: 32px;
 }
 
+.contact-me li{
+	border-radius: 5%;
+}
+
+.contact-me li a{
+		line-height: 80px;
+}
 }
 
 @media all and (max-width: 992px) and (min-width: 769px) {
+
+
 
 }
