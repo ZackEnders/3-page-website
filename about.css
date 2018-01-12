@@ -4,9 +4,17 @@
 }
 
 
+
 html {
 	background: url("img/background.jpeg") no-repeat center center fixed;
 	background-size: cover;
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -26,6 +34,7 @@ html {
 .nav-bar {
 	margin-top: 20px;
 	margin-left: 20px;
+	overflow-x: hidden;
 }
 .nav-bar ul li a {
 	color: antiquewhite;
@@ -59,7 +68,9 @@ div.polaroid {
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
+
     display: inline-block;
+
 }
 
 /*div.rotate_right {
@@ -104,6 +115,7 @@ footer {
     margin: 0 auto;
     padding-top: 25px;
     clear: both;
+    overflow-x: hidden;
 }
 
 .social_media {
@@ -195,8 +207,8 @@ div.polaroid {
 
 
 footer {
-    position: static;
-    bottom: 0;
+/*    position: static;
+    bottom: 0;*/
     height: 75px;
     width: 100%;
     text-align: center;
@@ -207,16 +219,20 @@ footer {
 }
 
 @media all and (max-width: 992px) and (min-width: 769px) {
-
-.body {
-	width: 70%;
+div.body {
+	width: 620px;
+	height: 100%;	
 	margin: 0 auto;
+	padding: 13%;
+	padding-top: 80px;
+	padding-bottom: 0;
 }
 
 div.polaroid {
 	float: none;
-/*	margin: 0 auto;*/
 }
+
+
 
 div.rotate_right {
     float: left;
@@ -230,4 +246,20 @@ div.rotate_left{
 	display: block;
 }
 
+footer {
+/*    position: static;
+    bottom: 0;*/
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
+
+
+}
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
