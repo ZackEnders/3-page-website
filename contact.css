@@ -171,7 +171,6 @@ footer {
 	display: block;
 	margin: 0 auto;
 	line-height: 80px;
-/*	color: black;*/
 	font-size: 24px;
 }
 
@@ -199,12 +198,22 @@ li.mail a {
 
 .contact-me li{
 	border-radius: 5%;
+	margin: 50px auto;
 }
 
 .contact-me li a{
 		line-height: 80px;
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
+}
+
 
 @media all and (max-width: 992px) and (min-width: 769px) {
 
