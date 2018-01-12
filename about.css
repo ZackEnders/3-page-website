@@ -59,10 +59,10 @@ div.polaroid {
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
-    display: block;
+    display: inline-block;
 }
 
-div.rotate_right {
+/*div.rotate_right {
     float: left;
     transform: rotate(7deg);
 }
@@ -70,6 +70,28 @@ div.rotate_right {
 div.rotate_left {
 	float: left;
 	transform: rotate(-8deg);
+}*/
+
+.body {
+	width: 70%;
+	margin: 0 auto;
+}
+
+div.polaroid {
+	float: none;
+	margin: 0 auto;
+}
+
+div.rotate_right {
+    float: left;
+    transform: rotate(7deg);
+    margin-left: 15px;
+	margin-top: 15px}
+
+div.rotate_left{
+	float: left;
+	transform: rotate(-8deg);
+	display: block;
 }
 /*----------------------Footer---------------------*/
 
@@ -138,6 +160,10 @@ div.polaroid {
     margin: 0 auto;
 }
 
+div.rotate_right {
+
+    margin-top: 15px;
+}
 
 
 
@@ -189,17 +215,19 @@ footer {
 
 div.polaroid {
 	float: none;
-	margin: 0 auto;
+/*	margin: 0 auto;*/
 }
 
 div.rotate_right {
     float: left;
     transform: rotate(7deg);
+    margin-left: 15px;
 }
 
-div.rotate_left {
+div.rotate_left{
 	float: left;
 	transform: rotate(-8deg);
+	display: block;
 }
 
 }
